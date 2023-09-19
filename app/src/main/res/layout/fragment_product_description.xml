@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Imagem do Produto -->
+    <ImageView
+        android:id="@+id/productImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/teste" />
+
+    <!-- Nome do Produto -->
+    <TextView
+        android:id="@+id/productNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productImageView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Nome do Produto"
+        android:textSize="24sp" />
+
+    <!-- Preço do Produto -->
+    <TextView
+        android:id="@+id/productPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productNameTextView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="R$ 100,00"
+        android:textSize="18sp" />
+
+    <!-- Descrição do Produto -->
+    <TextView
+        android:id="@+id/productDescriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productPriceTextView"
+        android:layout_margin="16dp"
+        android:text="Descrição detalhada do produto. Esta seção pode incluir informações sobre o produto, suas características e detalhes relevantes."
+        android:textSize="16sp" />
+
+    <!-- Botão "Adicionar ao Carrinho" -->
+    <Button
+        android:id="@+id/addToCartButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productDescriptionTextView"
+        android:layout_margin="16dp"
+        android:text="Adicionar ao Carrinho"
+        android:textSize="18sp" />
+
+</RelativeLayout>
